@@ -2402,7 +2402,7 @@ tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d.info; });
 		.on('mouseover', tip.show)
 		.on('mouseout', tip.hide);
 	nodes.append("text").style("fill","black")
-        .attr("dx", function(d) { return 1280*d.x/100  })
+        .attr("dx", function(d) { return 1280*d.x/100-10  })
         .attr("dy", function(d) { return 900*d.y/100 })
 		.text(function(d) { return d.num.split("-")[0] });
 
