@@ -2404,7 +2404,7 @@ tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d.info; });
 	nodes.append("text").style("fill","black")
         .attr("dx", function(d) { return 1280*d.x/100  })
         .attr("dy", function(d) { return 900*d.y/100 })
-		.text(function(d) { return d.num });
+		.text(function(d) { return d.num.split("-")[0] });
 
 		
 		
